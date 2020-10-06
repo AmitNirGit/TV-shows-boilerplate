@@ -37,19 +37,14 @@ function OneShow() {
             src='https://img.icons8.com/metro/52/000000/circled-left-2.png'
           />
         </Link>
-        <div className='like-div'>
+        <div className='like-div' onClick={likeHandler}>
           {Liked ? (
-            <img
-              className='interaction-img'
-              src={likedImg}
-              alt='liked'
-              onClick={likeHandler}></img>
+            <img className='interaction-img' src={likedImg} alt='liked'></img>
           ) : (
             <img
               className='interaction-img'
               src={notLikedImg}
-              alt='not liked'
-              onClick={likeHandler}></img>
+              alt='not liked'></img>
           )}
         </div>
         <div className='one-show-img-and-title'>
